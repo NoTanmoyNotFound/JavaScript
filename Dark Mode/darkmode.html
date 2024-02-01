@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark</title>
+    <style>
+        body{
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+
+        }
+        .dark-mode{
+            background-color:rgba(0, 0, 0, 0.697);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam similique, optio maiores consequuntur fugit atque error asperiores quaerat. Modi esse incidunt alias eveniet laudantium velit debitis nemo, quo commodi!</p>
+    <button onclick="myfunction()">
+        Dark mode Light mode
+    </button>
+    <script>
+        function myfunction(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
