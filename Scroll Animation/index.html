@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <p>Scroll TO Reveal Elements</p>
+    </section>
+    <div> <h2 data-text="2020">2020</h2></div>
+    <div> <h2 data-text="2021">2021</h2></div>
+    <div> <h2 data-text="2022">2022</h2></div>
+    <div> <h2 data-text="2023">2023</h2></div>
+    <div class="current"> <h2 data-text="2024">2024</h2></div>
+    <div> <h2 data-text="2025">2025</h2></div>
+    <div> <h2 data-text="2026">2026</h2></div>
+    <div> <h2 data-text="2027">2027</h2></div>
+    <div> <h2 data-text="2028">2028</h2></div>
+    <div> <h2 data-text="...">...</h2></div>
+    <section>
+        <p>Khatam..... :)</p>
+    </section>
+<script>
+    function reveal(){
+        let item = document.querySelectorAll('h2');
+    for (var i =0;i<item.length;i++){
+        let windowHeight = window.innerHeight;
+        let elementTop = item[i].getBoundingClientRect().top;
+        let elementVisible = 300;
+
+        if(elementTop < windowHeight - elementVisible){
+            item[i].classList.add("active")
+        }else{
+            item[i].classList.remove("active")
+        }
+    }
+    }
+    window.addEventListener("scroll", reveal);
+</script>
+</body>
+</html>
