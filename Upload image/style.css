@@ -1,0 +1,58 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    font-family: 'Nanum Gothic', sans-serif;
+    box-sizing: border-box;
+}
+/* .btn-warning{
+    position: relative;
+    padding: 11px 16px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background: orange;
+    overflow: hidden;
+}
+.btn-warning input[type="file"]{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(3);
+    display: none;
+    opacity: 0;
+} */
+.upload{
+    width: 100px;
+    position: relative;
+    /* margin: auto; */
+}
+.upload img{
+    border-radius: 50px;
+    border: 2px solid #3333334d;
+}
+.upload .round{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.399);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    cursor: pointer;
+    
+}
+.round input{
+    display: none
+;
+}
+#ok{
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0ff915bd0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="upload">
+        <img src="images/profile.png" height="100" width="100" id="profile-pic">
+        <div class="round">
+            <input type="file" id="input-file" accept="image/jpeg, image/png, image/jpg">
+            <label for="input-file" id="ok"> <i class="fa fa-camera"></i></label>
+        </div>
+    </div>
+
+    
+    <script>
+        let profilePic = document.getElementById("profile-pic");
+        let inputFile = document.getElementById("input-file");
+
+        inputFile.onchange = function(){
+            profilePic.src = URL.createObjectURL(inputFile.files[0]);
+        }
+    </script>
+</body>
+</html>
